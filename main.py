@@ -161,11 +161,10 @@ def ChatGPTWebAPI():
 
 
 if __name__ == '__main__':
-    try:
-        app.run(host='0.0.0.0', port=5555, debug=False, ssl_context=('/etc/letsencrypt/live/aptiversity.com/fullchain.pem', '/etc/letsencrypt/live/aptiversity.com/privkey.pem'))
-    except Exception as e:
-        print(e)
-        app.run(host='0.0.0.0', port=5555, debug=False, ssl_context=('cert.pem', 'key.pem'))
+    app.run(host='0.0.0.0', port=5555, debug=False)
+    # except Exception as e:
+    #     print(e)
+    #     app.run(host='0.0.0.0', port=5555, debug=False, ssl_context=('cert.pem', 'key.pem'))
 
 # if __name__ == '__main__':
 #     app.run(debug=True, port=os.getenv("PORT", default=5000))
