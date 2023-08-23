@@ -5,7 +5,5 @@ python-dotenv
 PyPDF2
 langchain
 faiss-cpu
-openai-whisper
-torch
 Flask-Session
 Flask-CORS
