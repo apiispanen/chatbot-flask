@@ -6,6 +6,15 @@ __pycache__/
 # C extensions
 *.so
 
+# Drew Configs
+.env
+
+ffmpeg.exe
+ffplay.exe
+ffprobe.exe
+
+flask_session/
+
 # Distribution / packaging
 .Python
 build/
